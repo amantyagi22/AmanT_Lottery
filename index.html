@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lottery King</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- Generating the Lottery Number -->
+    <div class="hero">
+      <div class="content">
+        <h4>WIN</h4>
+        <p id="next">YOUR JACKPOT!</p>
+        <button
+          id="demo"
+          onclick="myFuction(); this.onclick=null"
+          type="button"
+        >
+          PLAY
+        </button>
+        <h5 id="reload" onclick="location.reload();"></h5>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <div class="results">
+      <div class="form">
+        <div id="input-num">
+          <h5>ENTER THE NUMBER</h5>
+          <input
+            type="text"
+            maxlength="2"
+            id="first_input"
+            autocomplete="off"
+          /><br />
+          <button id="rbtn" onclick="myFuction2()" type="button">RESULT</button>
+        </div>
+        <div class="result">
+          <div class="winner">
+            <div id="winner-1">
+              <img src="images/user-1.png" />
+              <p>WINNER ! !</p>
+            </div>
+            <div id="winner-2">
+              <img src="images/user-2.png" />
+              <p>WINNER ! !</p>
+            </div>
+            <div id="winner-3">
+              <img src="images/user-3.png" />
+              <p>WINNER ! !</p>
+            </div>
+          </div>
+          <div id="blnt">
+            <p>BETTER LUCK NEXT TIME</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="social-media">
+        <img src="images/facebook.png" class="facebook" />
+        <img src="images/instagram.png" class="instragram" />
+        <img src="images/twitter.png" class="twitter" />
+      </div>
+    </div>
+    <!-- copyright -->
+    <div class="copyright">
+      <h6>&copy;LOTTERY-KING:2020</h6>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
